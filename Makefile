@@ -1,8 +1,9 @@
 NAME = philo
-SRC = main.c
+SRC = main.c error.c free.c init.c utils.c eat.c think.c monitoring.c \
+	  one_philo_simulation.c simulation.c status.c
 SRC_FILES = $(addprefix src/, $(SRC))
-CC = cc
-CFLAGS = -Wall -Wextra # -Werror
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 INCLUDE = -I./include -I./libft
 LINKING = -Llibft -lft
